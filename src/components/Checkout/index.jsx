@@ -46,9 +46,6 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
   const [checkoutData, setCheckoutData] = useState("");
 
   const previousShippingCountry = usePreviousState(user.shippingCountry);
-  {/*const previousShippingSubdivision = usePreviousState(
-    user.shippingSubdivision
-  );*/}
 
   const history = useNavigate();
 
@@ -158,49 +155,9 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
       fetchSubdivisions(user.shippingCountry.code);
   }, [user, previousShippingCountry]);
 
-  {/*useEffect(() => {
-    const fetchShippingOptions = async (
-      checkoutDataId,
-      country,
-      stateProvince = null
-    ) => {
-      const options = await commerce.checkout.getShippingOptions(
-        checkoutDataId,
-        {
-          country,
-          region: stateProvince,
-        }
-      );
-
-      setUser({
-        ...user,
-        shippingOptions: options,
-        shippingOption: { id: options[0].id },
-      });
-    };
-
-    if (
-      (user.shippingSubdivision.code && !user.shippingOptions.length) ||
-      (previousShippingSubdivision &&
-        previousShippingSubdivision.code !== user.shippingSubdivision.code)
-    )
-      fetchShippingOptions(
-        checkoutData.id,
-        user.shippingCountry.code,
-        user.shippingSubdivision.code
-      );
-  }, [
-    user,
-    checkoutData.id,
-    user.shippingCountry.code,
-    user.shippingSubdivision
-  ]); */}
-
   if (
     !user.shippingSubdivisions.length ||
-    !user.shippingCountries.length //||
-    //!user.shippingOptions.length //||
-    //checkoutData
+    !user.shippingCountries.length
   ) {
     return (
       <div className="checkout">

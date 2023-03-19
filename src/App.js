@@ -62,7 +62,7 @@ function App() {
   const handleCheckout = async (checkoutId, orderData) => {
     try {
       if(checkoutId){
-        const incomingOrder = await commerce.checkout.capture(
+        await commerce.checkout.capture(
           checkoutId,
           orderData
         );
