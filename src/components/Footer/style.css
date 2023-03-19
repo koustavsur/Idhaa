@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    padding: 10px;
+    min-height: 160px;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #3d251e, #8b6c5c);
+    margin-top: auto;
+  }
+
+.details {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: flex;
+}
+
+.follow {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.social {
+  padding: 0 15px;
+  display: flex;
+  justify-content:center;
+}
+
+.social a {
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 25px;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 1.5;
+}
