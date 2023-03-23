@@ -8,7 +8,7 @@ import {
   } from "@material-ui/core";
   import { ShoppingCart } from "@material-ui/icons";
   import { Link, useLocation } from "react-router-dom";
-  import Idhaa from './IDHAA_LOGO.png'
+  import Idhaa from './Logo_brown.png'
   import { CircularProgress } from "@material-ui/core";
   
   import "./style.css";

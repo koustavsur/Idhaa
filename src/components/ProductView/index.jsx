@@ -123,7 +123,7 @@ const ProductView = ({ addProduct }) => {
               size="large"
               className="custom-button"
               onClick={() => {
-                addProduct(product.id, quantity, product.available);
+                addProduct(product.id, quantity);
               }}
             >
               <ShoppingCart /> Add to basket

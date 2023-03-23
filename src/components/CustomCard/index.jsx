@@ -24,7 +24,7 @@ const CustomCard = ({
 }) => {
   return (
     <Card className="custom-card">
-      <Link to={`/product-view/${basket ? product.product_id : product.id}`}>
+      <Link className="link" to={`/product-view/${basket ? product.product_id : product.id}`}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -38,7 +38,7 @@ const CustomCard = ({
             }}
           />
           <CardContent className="content">
-            <Typography
+          <Typography
               className="title"
               gutterBottom
               variant="h5"
@@ -91,7 +91,7 @@ const CustomCard = ({
             <Button
               size="small"
               color="secondary"
-              variant="outlined"
+              variant="contained"
               onClick={() => {
                 RemoveItemFromBasket(product.id);
               }}
@@ -101,7 +101,7 @@ const CustomCard = ({
             <>
               <Button
                 size="small"
-                variant="outlined"
+                variant="contained"
                 className="increase-product-quantity"
                 onClick={() => {
                   updateProduct(product.id, product.quantity + 1);
@@ -113,7 +113,7 @@ const CustomCard = ({
               <Button
                 size="small"
                 color="secondary"
-                variant="outlined"
+                variant="contained"
                 onClick={() => {
                   updateProduct(product.id, product.quantity - 1);
                 }}

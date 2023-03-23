@@ -1,4 +1,4 @@
-import { Grid, Container } from "@material-ui/core";
+import { Grid, Container, Typography } from "@material-ui/core";
 import Product from "../Product";
 import Spinner from "../Spinner";
 import Banner from "../Banner";
@@ -11,6 +11,11 @@ const Products = ({ products, addProduct }) => {
     <div>
       <Banner />
       <Container id="products">
+        <div className="wrapper-title">
+          <Typography className="title" variant="h3">
+            <span>Products</span>
+          </Typography>
+        </div>
         <Grid container spacing={4}>
           {products.map((product) => (
             <Grid key={product.id} item xs={12} sm={6} md={4}>

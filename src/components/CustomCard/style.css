@@ -1,5 +1,5 @@
 .MuiCard-root.custom-card {
-  background-color: #3d251e;
+  background-color: #8b6c5c;
   color: #c9d1d9;
   transition: all 0.5s ease-in-out;
 }
@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  color: #03dac5;
+  color: #c9d1d9;
   font-size: 30px;
   position: absolute;
   justify-content: center;
@@ -26,9 +26,13 @@
   transition: opacity 0.3s ease-in;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .MuiCard-root.custom-card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px 5px #03dac5;
+  box-shadow: 0px 0px 10px 5px #c9d1d9;
 }
 
 .MuiCard-root.custom-card:hover a h3 {
@@ -37,6 +41,7 @@
 
 .custom-card .content {
   padding-bottom: 0;
+  text-decoration: none;
 }
 
 .custom-card .title {
@@ -58,11 +63,11 @@
 
 .custom-card .price {
   margin-top: 10px;
-  color: #03dac5;
+  color: #c9d1d9;
 }
 
 .custom-card .basket-item-price {
-  color: #03dac5;
+  color: #c9d1d9;
   margin-bottom: 0;
 }
 
@@ -75,11 +80,11 @@
 }
 
 .custom-card .custom-button {
-  color: #03dac5;
+  color: #c9d1d9;
 }
 
 .custom-card .custom-button:hover {
-  background-color: #bb86fc;
+  background-color: #4CBB17;
   color: #c9d1d9;
 }
 
@@ -88,6 +93,6 @@
 }
 
 .custom-card .increase-product-quantity {
-  color: #03dac5;
-  border-color: #03dac5;
+  border-color: #4CBB17;
+  background-color: #4CBB17;
 }
